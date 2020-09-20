@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+
+        .box {
+            height: 76px;
+            background-color: black;
+            border: 1px solid rgb(228, 228, 228);
+            color: rgb(209, 209, 209);
+        }
+        .placeHolder {
+            height: 250px;
+        }
+
+        .keyboard-color {
+            background-color: rgb(173, 173, 173)
+        }
+
+        .extrbtn-border {
+            border: 1px solid whitesmoke;
+            background-color: black;
+            color: rgb(209, 209, 209);
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid mb-4 mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-1 mx-5" id="display-text">
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container keyboard-color py-4 mb-2" style="border-radius: 60px;" id="keys">
+        <div class="row d-flex justify-content-center" id="symbols">
+            <div class="col-1">
+                <div class="box rounded-pill shadow-lg shadow-lg">
+                    <h5 class="text-center m-0 mt-2">!</h5>
+                    <h3 class="text-center m-0">1</h3>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-pill shadow-lg">
+                    <h5 class="text-center m-0 mt-2">@</h5>
+                    <h3 class="text-center m-0">2</h3>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-pill shadow-lg">
+                    <h5 class="text-center m-0 mt-2">#</h5>
+                    <h3 class="text-center m-0">3</h3>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-pill shadow-lg">
+                    <h5 class="text-center m-0 mt-2">$</h5>
+                    <h3 class="text-center m-0">4</h3>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-pill shadow-lg">
+                    <h5 class="text-center m-0 mt-2">%</h5>
+                    <h3 class="text-center m-0">5</h3>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-pill shadow-lg">
+                    <h5 class="text-center m-0 mt-2">^</h5>
+                    <h3 class="text-center m-0">6</h3>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-pill shadow-lg">
+                    <h5 class="text-center m-0 mt-2">&</h5>
+                    <h3 class="text-center m-0">7</h3>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-pill shadow-lg">
+                    <h5 class="text-center m-0 mt-2">*</h5>
+                    <h3 class="text-center m-0">8</h3>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-pill shadow-lg">
+                    <h5 class="text-center m-0 mt-2">(</h5>
+                    <h3 class="text-center m-0">9</h3>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-pill shadow-lg">
+                    <h5 class="text-center m-0 mt-2">)</h5>
+                    <h3 class="text-center m-0">0</h3>
+                </div>
+            </div>
+            <div class="col-1" id="del">
+                <div class="box rounded-pill d-flex align-items-center justify-content-center shadow-lg">
+                    <h5 class="mt-2">DEL</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">Q</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">W</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">E</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">R</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">T</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">Y</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">U</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">I</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">O</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">P</h1></div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">A</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">S</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">D</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">F</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">G</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">H</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">J</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">K</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">L</h1></div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">Z</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">X</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">C</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">V</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">B</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">N</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-circle d-flex align-items-center justify-content-center shadow-lg"><h1 class="mt-2">M</h1></div>
+            </div>
+            <div class="col-1">
+                <div class="box rounded-pill d-flex align-items-center justify-content-center shadow-lg"><h6 class="mt-2">.com</h6></div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-3 mb-3">
+            <div class="col-5">
+                <div class="box rounded-pill shadow-lg" style="height: 70px;">
+                    <h6>&nbsp;</h6>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-2" id="caps">
+                <div class="pt-1 d-flex align-items-center justify-content-center shadow-lg extrbtn-border rounded-pill">
+                    <h4 class="pt-1">CAPS</h4>
+                </div>
+            </div>
+            <div class="col-2" id="shift">
+                <div class="pt-1 d-flex align-items-center justify-content-center shadow-lg extrbtn-border rounded-pill">
+                    <h4 class="pt-1">SHIFT</h4>
+                </div>
+            </div>
+            <div class="col-2" id="passwd">
+                <div class="pt-1 d-flex align-items-center justify-content-center shadow-lg extrbtn-border rounded-pill">
+                    <h4 class="pt-1">PASSWD</h4>
+                </div>
+            </div>
+            <div class="col-2" id="clean">
+                <div class="pt-1 d-flex align-items-center justify-content-center shadow-lg extrbtn-border rounded-pill">
+                    <h4 class="pt-1">CLEAN</h4>
+                </div>
+            </div>
+            <div class="col-2" id="rev">
+                <div class="pt-1 d-flex align-items-center justify-content-center shadow-lg extrbtn-border rounded-pill">
+                    <h4 class="pt-1">REV</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
